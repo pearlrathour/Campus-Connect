@@ -406,65 +406,40 @@
           </p>
           </p>
         </div>
+        
         <div class="tabs__content is-active">
           <h2 class="tabs__title">Articles</h2>
+          {%for i in blog%}
           <div class="blog-post">
             <div class="blog-head-topic" style="text-align:left ; color: rgb(5, 100, 122);">Artificial Intelligence
             </div>
+            
             <div class="blog-heading" style="text-align:left ;">
               <a href="{%url 'blog'%}">
-                <h2>Deep Understanding Tesla FSD Part 1: HydraNet </h2>
+                <h2> {{i.title}} </h2>
               </a>
               <p class="blog-description" style="margin-bottom:20px;">
-                From Theory to Reality, Analyze the Evolution of Tesla Full Self-Driving
+                {{i.all}}
               </p>
               <!-- <p class="blog-author" style="color:#3b8296 ;  font-weight:500;"><i class="fa-solid fa-feather"></i>Samadeep Sengupta</p> -->
               <div class="blog-tags">
 
                 <ul style="margin-bottom:20px ; font-size: small;">
-
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>Machine Learning</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>AI</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>SelfDriving</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>Neural Networks</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>OpenCV</b> </a> </li>
+                  {%for i in tag %}
+                  <li><a href=""><i class="fa-solid fa-tag"></i><b>{{i.name}}</b> </a> </li>
+                  {% endfor %}
 
 
                 </ul>
 
 
               </div>
+
             </div>
           </div>
-          <div class="blog-post">
-            <div class="blog-head-topic" style="text-align:left ; color: rgb(5, 100, 122);">Intelligent Hardware</div>
-            <div class="blog-heading" style="text-align:left ;">
-              <a href="/blogs/blog.html">
-                <h2 class="blog-title">The New Hardware Development Trend and the Challenges in Data Management and
-                  Analysis</h2>
-              </a>
-              <p class="blog-description" style="margin-bottom:20px;">
-                Most Accurate analysis of date
-              </p>
-              <!-- <p class="blog-author" style="color:#3b8296 ;  font-weight:500;"><i class="fa-solid fa-feather"></i>Samadeep Sengupta</p> -->
-              <div class="blog-tags">
+          {%endfor%}
 
-                <ul style="margin-bottom:20px ; font-size: small;">
-
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>Embedded Systems</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>AI</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>IoT</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>Intelligent Hardware</b> </a> </li>
-                  <li><a href=""><i class="fa-solid fa-tag"></i><b>Machine Learning</b> </a> </li>
-
-
-                </ul>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
+          
         <div class="tabs__content">
           <h2 class="tabs__title">Gallery Title</h2>
           <p class="tabs__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quasi commodi nisi ex
