@@ -8,7 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
-  <link rel="stylesheet" href="{% static 'club.css' %}" />
+  <link rel="stylesheet" href="{% static 'club.css' %}"/>
+
   <script src="https://kit.fontawesome.com/a7bcb84487.js" crossorigin="anonymous"></script>
 
 </head>
@@ -50,7 +51,7 @@
     <div class="profile-head">
       <div class="profile-img">
 
-        <img src="spec.png" width="200" alt="">
+        <img src="{% static 'spec.png' %}" width="200" alt="">
       </div>
       <div class="heading">
         <h3 class="user-name">Society for Promotion of Electronics Culture</h3>
@@ -136,18 +137,8 @@
       </div>
       <div class="tabs__body">
         <div class="tabs__content">
-          <h2 class="tabs__title">About SPEC</h2>
-          <p class="tabs__text">SPEC is being run under the aegis of the <b>Electronics and Communication Department,
-              NIT Hamirpur.</b> We at SPEC, organize various events, workshops, and competitions to pique the scientific
-            temperament of the students. The society is reputed for conducting a national level hackathon: ELECTROTHON,
-            one of the most ingenious and diverse hackathon. ELECTROTHON has been a budding ground to many mind-boggling
-            ideas and inventions, a platform for the upcoming innovators and bold entrepreneurs. The event is majorly
-            manifested by guest-talks, project exhibitions and a 48 hour grinding hackathon. It also conducts its yearly
-            technical fest, SPEC FEST covering advancements and marvels of the tech world, along with a display of
-            year-long projects. Comprising events, workshops and exhibitions that provide diverse opportunities for
-            students to enlighten their inquisitive minds. Students work all year long in building projects, organising
-            workshops and thriving to create a change. SPEC believes in giving a platform to the young, dynamic, eager
-            to learn engineers to convert their theoretical knowledge into useful innovative projects. </p>
+          <h2 class="tabs__title">About {{name}}</h2>
+          <p class="tabs__text">{{college}}</p>
         </div>
         <div class="tabs__content">
           <h2 class="tabs__title">Active Events</h2>
@@ -482,6 +473,6 @@
         </div>
       </div>
     </div>
-    <script src="club.js"></script>
+    <script src="{%static 'club.js'%}"></script>
 </body>
 </html>

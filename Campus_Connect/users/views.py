@@ -1,7 +1,12 @@
 from xml.sax import make_parser
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
+
+from . models import profile
 
 def prof(request):
-    return render(request, "club.html")
+    profiles=profile.objects.get(id=3)
+    context={"name": profiles.Name,
+            "college": profiles.college,}
+    return render(request, "club.html", context)
+
