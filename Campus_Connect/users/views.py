@@ -1,7 +1,7 @@
-import http
+from xml.sax import make_parser
 from django.shortcuts import render
-
 from django.http import HttpResponse
+# Create your views here.
 
-def profile(request):
+def prof(request):
     return HttpResponse("hello")
