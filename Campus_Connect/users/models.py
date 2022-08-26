@@ -16,7 +16,7 @@ class profile(models.Model):
     link=models.CharField(max_length=2000, null=True, blank=True)
     college=models.CharField(max_length=1000, blank=True, null=True)
     def __str__(self) :
-        return self.Name 
+        return str(self.user)
     
 
 
