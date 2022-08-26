@@ -6,8 +6,12 @@ from django.contrib import messages
 from Users.models import profile, tags, blog
 
 
-# def home(request):
-#     return render(request, "domain.html")
+def land(request):
+    return render(request, "landing ori.html")
+
+
+def result(request):
+    return render(request, "landing.html")
 
 def login_page(request):
     if request.method=='POST':
@@ -36,3 +40,6 @@ def domains(request):
     }
 
     return render(request,"domain.html", context)
+
+
+
