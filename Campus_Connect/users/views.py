@@ -10,14 +10,14 @@ from django.contrib.auth.models import User
 
 def prof(request):
 #     users=User.objects.get(id=1)
-    profiles=profile.objects.get(id=11)
+    profiles=profile.objects.all()
     
     blogs=blog.objects.all()
     tagss=tags.objects.all()
     context={
                 "tag":tagss,
                 "title":blogs,
-                "name" : profiles.Name,
+                "name" : profiles,
                 "blog":blogs
         }
     return render(request, "club.html",context)

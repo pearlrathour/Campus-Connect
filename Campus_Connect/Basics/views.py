@@ -7,7 +7,7 @@ from Users.models import profile, tags, blog
 
 
 def land(request):
-    return render(request, "landing ori.html")
+    return render(request, "landing1.html")
 
 
 def result(request):
@@ -39,7 +39,10 @@ def domains(request):
         "block":profile.objects.filter(tags=tag[4]),
     }
 
-    return render(request,"domain.html", context)
+    return render(request,"domain.html")
+
+def trending(request):
+    return render(request, "trending.html")
 
 
 

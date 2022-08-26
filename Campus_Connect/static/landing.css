@@ -19,7 +19,7 @@ body {
   margin-top: 0px;
   padding-right: 0px;
   border-right: 2px solid black;
-  background-image: url(/bgr.png);
+  background-image: url("bg.png");
   color: #073251;
 
   min-width: 100vw;
@@ -38,7 +38,8 @@ nav
 nav ul {
   position: relative;
   color: #073251;
-  
+  background-color: #ffffff;
+
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -77,10 +78,12 @@ nav ul::-webkit-scrollbar {
   text-align: center;
   /* width: calc(100%/5); */
   color: #073251;
-  font-weight: 600px;
+  font-weight: 800px;
 }
-.nav-items a {
+.nav-items a{
+  color: #050607;
   text-decoration: none;
+  font-weight: 600px;
 }
 
 .nav-items:hover {
@@ -156,7 +159,7 @@ nav ul::-webkit-scrollbar {
 
 .banner {
   position: relative;
-  min-height: 100vh;
+  min-height: 61vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -185,7 +188,8 @@ p {
   font-size: 0.5em;
 }
 
-.input-term-search {
+.input-term-search 
+{
   border-radius: 28px;
   border: none;
   background-color: transparent;
@@ -216,14 +220,24 @@ p {
   transition: 0.5s;
   border-radius: 8px;
 }
+.explore-campusconnect-research{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  
+}
+.explore-campusconnect-research a{
+  font-weight: 700;
+  text-decoration: none;
+  color: #1077de;
+}
 
 .search-section {
   margin-left: 20px;
   position: relative;
   border: 2px solid black;
   border-radius: 28px;
-  height: 10vh;
-  width: 90vw;
+  height: 5vh;
+  width: 70vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,8 +246,7 @@ p {
 .search-btn {
   font-size: 40px;
   position: absolute;
-
-  top: 18%;
+  top: 5%;
   right: 0%;
 }
 
@@ -242,12 +255,12 @@ p {
   font-weight: bolder;
 }
 
-.search-results-heading{
+.search-results-heading
+{
     color: #050607;
     font-size: larger;
     font-weight: 800;
     padding-left: 20px;
-
 }
 
 .search-content {
@@ -258,7 +271,7 @@ p {
 
 .searched-societies{
     display: grid;
-    gap: 6px;
+    gap: 12px;
     grid-auto-flow: column;
    -ms-grid-column-align: center;
    overflow-x: auto;
