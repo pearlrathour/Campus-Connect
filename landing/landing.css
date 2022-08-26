@@ -19,7 +19,7 @@ body {
   margin-top: 0px;
   padding-right: 0px;
   border-right: 2px solid black;
-  background-image: url(/bgr.png);
+  background-image: url(/photo_2022-08-25_16-36-46.png);
   color: #073251;
 
   min-width: 100vw;
@@ -38,7 +38,8 @@ nav
 nav ul {
   position: relative;
   color: #073251;
-  
+  background-color: #ffffff;
+
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -222,8 +223,8 @@ p {
   position: relative;
   border: 2px solid black;
   border-radius: 28px;
-  height: 10vh;
-  width: 90vw;
+  height: 7vh;
+  width: 70vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,8 +233,7 @@ p {
 .search-btn {
   font-size: 40px;
   position: absolute;
-
-  top: 18%;
+  top: 5%;
   right: 0%;
 }
 
@@ -242,12 +242,12 @@ p {
   font-weight: bolder;
 }
 
-.search-results-heading{
+.search-results-heading
+{
     color: #050607;
     font-size: larger;
     font-weight: 800;
     padding-left: 20px;
-
 }
 
 .search-content {
