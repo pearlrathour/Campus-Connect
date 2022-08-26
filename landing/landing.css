@@ -19,7 +19,7 @@ body {
   margin-top: 0px;
   padding-right: 0px;
   border-right: 2px solid black;
-  background-image: url(/photo_2022-08-25_16-36-46.png);
+  background-image: url(/bgr.png);
   color: #073251;
 
   min-width: 100vw;
@@ -78,10 +78,12 @@ nav ul::-webkit-scrollbar {
   text-align: center;
   /* width: calc(100%/5); */
   color: #073251;
-  font-weight: 600px;
+  font-weight: 800px;
 }
-.nav-items a {
+.nav-items a{
+  color: #050607;
   text-decoration: none;
+  font-weight: 600px;
 }
 
 .nav-items:hover {
@@ -157,7 +159,7 @@ nav ul::-webkit-scrollbar {
 
 .banner {
   position: relative;
-  min-height: 100vh;
+  min-height: 61vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,7 +188,8 @@ p {
   font-size: 0.5em;
 }
 
-.input-term-search {
+.input-term-search 
+{
   border-radius: 28px;
   border: none;
   background-color: transparent;
@@ -217,13 +220,23 @@ p {
   transition: 0.5s;
   border-radius: 8px;
 }
+.explore-campusconnect-research{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  
+}
+.explore-campusconnect-research a{
+  font-weight: 700;
+  text-decoration: none;
+  color: #1077de;
+}
 
 .search-section {
   margin-left: 20px;
   position: relative;
   border: 2px solid black;
   border-radius: 28px;
-  height: 7vh;
+  height: 5vh;
   width: 70vw;
   display: flex;
   align-items: center;
