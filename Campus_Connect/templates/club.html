@@ -21,9 +21,9 @@
       <div class="logo-container">
         <li class="logo-text">
       </div>
-      <li class="logo"> campusconnect <span
+      <li class="logo"> <a href="{%url 'Home'%}" style="text-decoration:none;">campusconnect <span
           style="color:rgba(102, 184, 241, 0.984); font-weight: 800;margin-right: 3px;">.in</span>
-        |Clubs Profile</li>
+        |Clubs Profile</a></li>
       </div>
       <button class="hamberger" id="hamburger">
         <i class="fas fa-bars"></i>
@@ -137,7 +137,7 @@
       </div>
       <div class="tabs__body">
         <div class="tabs__content">
-          <h2 class="tabs__title">About {{name}}</h2>
+          <h2 class="tabs__title">About {{name.Name}}</h2>
           <p class="tabs__text">{{college}}</p>
         </div>
         <div class="tabs__content">

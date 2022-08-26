@@ -21,7 +21,7 @@ class profile(models.Model):
 
 
 class blog(models.Model):
-    user=models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+    user=models.ManyToManyField(User,  blank=True, null=True)
     tags=models.ForeignKey('tags', blank=True, null=True , on_delete=models.CASCADE)
     title=models.CharField(max_length=200, null=True, blank=True)
     all=models.TextField(blank=True, null=True)

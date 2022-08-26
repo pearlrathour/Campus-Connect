@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    {%load static%}
 <head>
+    {%load static%}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'landing.css' %}">
+    <link rel="stylesheet" href="{%static 'landing.css'%}">
     <script src="https://kit.fontawesome.com/a7bcb84487.js" crossorigin="anonymous"></script>
 
 </head>
@@ -26,7 +26,7 @@
         <div class="nav-items-container">
 
             <li class="nav-items"><a href="/blogs/blog.html"><i class="fa-solid fa-blog"></i>Blogs</a></li>
-            <li class="nav-items"><a href=""><i
+            <li class="nav-items"><a href="/Domains/domain.html"><i
                         class="fa-solid fa-network-wired"></i>Domains</a> </li>
             <li class="nav-items"><i class="fa-solid fa-people-group"></i>Societies</li>
             <li class="nav-items is-active"><i class="fa-solid fa-fire"></i>Trending</li>
@@ -50,7 +50,7 @@
 
         <input type="text" class="input-term-search" placeholder="search to connect to societies ,ideas and like-minded inidviduals">
     
-        <a href="" class="btn"><i class="fa-solid fa-circle-arrow-right search-btn"></i></a>
+        <a href="stc.html" class="btn"><i class="fa-solid fa-circle-arrow-right search-btn"></i></a>
         </div>
     </div>
 </section>
@@ -94,10 +94,10 @@
         <div class="society-box">
             <div class="college-name" ><div style="text-align:left ; color: rgb(5, 100, 122);">National Institute of Technology, Hamirpur</div> </div>
             <div class="blog-heading" style="text-align:left ;">
-              <a href=""><h2 >Society for promotion of Electronic Culture: NIT Hamirpur</h2></a>                </div>
+              <a href=""><h2 >Google Developer Students Club: NITH Chapter</h2></a>                </div>
 
               <p class="society-description" style="margin-bottom:20px;">
-                       SPEC Description                  </p>
+                       GDSC Description                  </p>
               <!-- <p class="blog-author" style="color:#3b8296 ;  font-weight:500;"><i class="fa-solid fa-feather"></i>Samadeep Sengupta</p> -->
               <div class="society-links">
                 <a href="" class="view-links"><i class="fa-solid fa-code" style="margin-right:5px ;"></i><b style="font-weight:300 ;">Projects</b> </a>
@@ -124,10 +124,10 @@
         <div class="society-box">
             <div class="college-name" ><div style="text-align:left ; color: rgb(5, 100, 122);">National Institute of Technology, Hamirpur</div> </div>
             <div class="blog-heading" style="text-align:left ;">
-              <a href=""><h2 >ISTE : NIT Hamirpur</h2></a>                </div>
+              <a href=""><h2 >Google Developer Students Club: NITH Chapter</h2></a>                </div>
 
               <p class="society-description" style="margin-bottom:20px;">
-                       ISTE Description                  </p>
+                       GDSC Description                  </p>
               <!-- <p class="blog-author" style="color:#3b8296 ;  font-weight:500;"><i class="fa-solid fa-feather"></i>Samadeep Sengupta</p> -->
               <div class="society-links">
                 <a href="" class="view-links"><i class="fa-solid fa-code" style="margin-right:5px ;"></i><b style="font-weight:300 ;">Projects</b> </a>
@@ -154,6 +154,6 @@
 
     </div>
 </div>
-    <script src="{%static 'landing.js'%}"></script>
+    <script src="{% static 'landing.js'%}"></script>
 </body>
 </html>
