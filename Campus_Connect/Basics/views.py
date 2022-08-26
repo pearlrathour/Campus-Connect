@@ -3,10 +3,11 @@ from django.contrib.auth import login, authenticate
 from Users.models import profile
 from django.contrib.auth.models import User
 from django.contrib import messages
+from Users.models import profile, tags, blog
 
 
-def home(request):
-    return render(request, "landing.html")
+# def home(request):
+#     return render(request, "domain.html")
 
 def login_page(request):
     if request.method=='POST':
@@ -22,3 +23,16 @@ def login_page(request):
             messages.error(request, "error")
             
     return render(request, "login.html")
+
+def domains(request):
+    tag=tags.objects.all()
+    
+    context={
+       "web": profile.objects.filter(tags=tag[0]),
+        "AI/ML":profile.objects.filter(tags=tag[1]),
+        "AR/VR":profile.objects.filter(tags=tag[2]),
+        "app":profile.objects.filter(tags=tag[3]),
+        "block":profile.objects.filter(tags=tag[4]),
+    }
+
+    return render(request,"domain.html", context)
